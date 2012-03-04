@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35A15DD714CC2630004B6C21 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A15DD614CC2630004B6C21 /* Map.m */; };
+		35A15DDF14CC28C4004B6C21 /* MapTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A15DDE14CC28C4004B6C21 /* MapTile.m */; };
+		35A15DE314CC2ADB004B6C21 /* Organism.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A15DE214CC2ADB004B6C21 /* Organism.m */; };
+		35A15DE614CC2B47004B6C21 /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A15DE514CC2B47004B6C21 /* Plant.m */; };
 		35C0564B14C85A2E0059D670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C0564A14C85A2E0059D670 /* UIKit.framework */; };
 		35C0564D14C85A2E0059D670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C0564C14C85A2E0059D670 /* Foundation.framework */; };
 		35C0564F14C85A2E0059D670 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C0564E14C85A2E0059D670 /* CoreGraphics.framework */; };
@@ -18,6 +22,13 @@
 		35C0566514C85A300059D670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C0564C14C85A2E0059D670 /* Foundation.framework */; };
 		35C0566D14C85A300059D670 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35C0566B14C85A300059D670 /* InfoPlist.strings */; };
 		35C0567014C85A300059D670 /* little_lifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0566F14C85A300059D670 /* little_lifeTests.m */; };
+		35C0567C14C861BB0059D670 /* Gene.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0567B14C861BB0059D670 /* Gene.m */; };
+		35C0567F14C866420059D670 /* Chromosome.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0567E14C866420059D670 /* Chromosome.m */; };
+		35C0568014C866420059D670 /* Chromosome.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0567E14C866420059D670 /* Chromosome.m */; };
+		35C0568314C86C8F0059D670 /* GenePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0568214C86C8E0059D670 /* GenePair.m */; };
+		35C0568414C86C8F0059D670 /* GenePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0568214C86C8E0059D670 /* GenePair.m */; };
+		35C0568914CA27E90059D670 /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0568814CA27E90059D670 /* World.m */; };
+		35C0568A14CA27E90059D670 /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C0568814CA27E90059D670 /* World.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35A15DD514CC2630004B6C21 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		35A15DD614CC2630004B6C21 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
+		35A15DD814CC26AB004B6C21 /* MapTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTile.h; sourceTree = "<group>"; };
+		35A15DDE14CC28C4004B6C21 /* MapTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTile.m; sourceTree = "<group>"; };
+		35A15DE114CC2ADB004B6C21 /* Organism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Organism.h; sourceTree = "<group>"; };
+		35A15DE214CC2ADB004B6C21 /* Organism.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Organism.m; sourceTree = "<group>"; };
+		35A15DE414CC2B47004B6C21 /* Plant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plant.h; sourceTree = "<group>"; };
+		35A15DE514CC2B47004B6C21 /* Plant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plant.m; sourceTree = "<group>"; };
 		35C0564614C85A2E0059D670 /* little_life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = little_life.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C0564A14C85A2E0059D670 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		35C0564C14C85A2E0059D670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +66,14 @@
 		35C0566C14C85A300059D670 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35C0566E14C85A300059D670 /* little_lifeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = little_lifeTests.h; sourceTree = "<group>"; };
 		35C0566F14C85A300059D670 /* little_lifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = little_lifeTests.m; sourceTree = "<group>"; };
+		35C0567A14C861BB0059D670 /* Gene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gene.h; sourceTree = "<group>"; };
+		35C0567B14C861BB0059D670 /* Gene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gene.m; sourceTree = "<group>"; };
+		35C0567D14C866420059D670 /* Chromosome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chromosome.h; sourceTree = "<group>"; };
+		35C0567E14C866420059D670 /* Chromosome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chromosome.m; sourceTree = "<group>"; };
+		35C0568114C86C8E0059D670 /* GenePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenePair.h; sourceTree = "<group>"; };
+		35C0568214C86C8E0059D670 /* GenePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenePair.m; sourceTree = "<group>"; };
+		35C0568714CA27E90059D670 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		35C0568814CA27E90059D670 /* World.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = World.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35A15DE014CC2ABD004B6C21 /* organisms */ = {
+			isa = PBXGroup;
+			children = (
+				35A15DE114CC2ADB004B6C21 /* Organism.h */,
+				35A15DE214CC2ADB004B6C21 /* Organism.m */,
+				35A15DE414CC2B47004B6C21 /* Plant.h */,
+				35A15DE514CC2B47004B6C21 /* Plant.m */,
+			);
+			name = organisms;
+			sourceTree = "<group>";
+		};
 		35C0563B14C85A2E0059D670 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +144,7 @@
 		35C0565014C85A2E0059D670 /* little_life */ = {
 			isa = PBXGroup;
 			children = (
+				35C0567914C85BFC0059D670 /* models */,
 				35C0565914C85A2E0059D670 /* AppDelegate.h */,
 				35C0565A14C85A2E0059D670 /* AppDelegate.m */,
 				35C0565114C85A2E0059D670 /* Supporting Files */,
@@ -141,6 +180,42 @@
 				35C0566B14C85A300059D670 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35C0567914C85BFC0059D670 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				35A15DE014CC2ABD004B6C21 /* organisms */,
+				35C0568614CA27CA0059D670 /* environment */,
+				35C0568514CA27B20059D670 /* genetics */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		35C0568514CA27B20059D670 /* genetics */ = {
+			isa = PBXGroup;
+			children = (
+				35C0567A14C861BB0059D670 /* Gene.h */,
+				35C0567B14C861BB0059D670 /* Gene.m */,
+				35C0567D14C866420059D670 /* Chromosome.h */,
+				35C0567E14C866420059D670 /* Chromosome.m */,
+				35C0568114C86C8E0059D670 /* GenePair.h */,
+				35C0568214C86C8E0059D670 /* GenePair.m */,
+			);
+			name = genetics;
+			sourceTree = "<group>";
+		};
+		35C0568614CA27CA0059D670 /* environment */ = {
+			isa = PBXGroup;
+			children = (
+				35C0568714CA27E90059D670 /* World.h */,
+				35C0568814CA27E90059D670 /* World.m */,
+				35A15DD514CC2630004B6C21 /* Map.h */,
+				35A15DD614CC2630004B6C21 /* Map.m */,
+				35A15DD814CC26AB004B6C21 /* MapTile.h */,
+				35A15DDE14CC28C4004B6C21 /* MapTile.m */,
+			);
+			name = environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +325,14 @@
 			files = (
 				35C0565714C85A2E0059D670 /* main.m in Sources */,
 				35C0565B14C85A2E0059D670 /* AppDelegate.m in Sources */,
+				35C0567C14C861BB0059D670 /* Gene.m in Sources */,
+				35C0567F14C866420059D670 /* Chromosome.m in Sources */,
+				35C0568314C86C8F0059D670 /* GenePair.m in Sources */,
+				35C0568914CA27E90059D670 /* World.m in Sources */,
+				35A15DD714CC2630004B6C21 /* Map.m in Sources */,
+				35A15DDF14CC28C4004B6C21 /* MapTile.m in Sources */,
+				35A15DE314CC2ADB004B6C21 /* Organism.m in Sources */,
+				35A15DE614CC2B47004B6C21 /* Plant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +341,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				35C0567014C85A300059D670 /* little_lifeTests.m in Sources */,
+				35C0568014C866420059D670 /* Chromosome.m in Sources */,
+				35C0568414C86C8F0059D670 /* GenePair.m in Sources */,
+				35C0568A14CA27E90059D670 /* World.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +497,7 @@
 				35C0567514C85A300059D670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35C0567614C85A300059D670 /* Build configuration list for PBXNativeTarget "little_lifeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +506,7 @@
 				35C0567814C85A300059D670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "World.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) World *world;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

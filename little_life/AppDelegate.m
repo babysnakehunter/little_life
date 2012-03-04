@@ -8,14 +8,49 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate (hidden)
+
+-(NSString *)bundlePath;
+-(NSString *)worldArchive;
+
+@end
+
 @implementation AppDelegate
 
-@synthesize window = _window;
+@synthesize window = _window, world;
+
+#pragma mark private methods
+
+-(NSString *)bundlePath {
+	return [[NSBundle mainBundle] bundlePath];
+}
+
+-(NSString *)worldArchive {
+	return [NSString stringWithFormat:@"%@/world.archive", [self bundlePath]];
+}
+
+#pragma mark generic methods
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+	
+	@try {
+		self.world = [NSKeyedUnarchiver unarchiveObjectWithFile:[self worldArchive]];
+	}
+	@catch (NSException *e) {
+		NSLog(@"Failed to restore world");
+	}
+	@finally {
+		if (!self.world) {
+			NSLog(@"Initializing world");
+			self.world = [[World alloc] init];
+		} else {
+			NSLog(@"restored world started at %@", world.created);
+		}
+	}
+	
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -35,6 +70,14 @@
 	 Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
 	 If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 	 */
+	BOOL saved;
+	@try {
+		saved = [NSKeyedArchiver archiveRootObject:self.world toFile:[self worldArchive]];
+	}
+	@catch (NSException *exception) {
+		saved = NO;
+	}
+	NSLog(@"saved progress %u", saved);
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -53,6 +96,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+	NSLog(@"applicationWillTerminate");
 	/*
 	 Called when the application is about to terminate.
 	 Save data if appropriate.

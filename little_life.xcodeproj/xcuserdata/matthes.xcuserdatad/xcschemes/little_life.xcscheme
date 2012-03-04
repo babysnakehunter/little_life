@@ -36,6 +36,11 @@
                BlueprintName = "little_lifeTests"
                ReferencedContainer = "container:little_life.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "little_lifeTests/testExample">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

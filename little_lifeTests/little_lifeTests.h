@@ -7,7 +7,12 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "Gene.h"
+#import "GenePair.h"
 
-@interface little_lifeTests : SenTestCase
+@interface little_lifeTests : SenTestCase {
+	Gene *dominantGene, *strongGene, *weakGene, *recessiveGene, *g, *g2;
+	GenePair *gp;
+}
 
 @end
